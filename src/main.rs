@@ -1,10 +1,13 @@
 mod server;
+mod command;
 use server::run_server;
 
-pub const BIND_PORT: u16 = 9393;
+#[macro_use]
+extern crate failure;
+
+pub const SERVER_BIND_PORT: u16 = 9393;
 
 fn main() {
-    // println!("{} {}", serial.serial_lower(), serial.serial_middle());
     // Blocking call
-    run_server(BIND_PORT);
+    run_server(SERVER_BIND_PORT);
 }

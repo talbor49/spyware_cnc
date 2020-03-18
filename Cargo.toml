@@ -9,3 +9,6 @@ edition = "2018"
 [dependencies]
 raw-cpuid = "7.0.3"
 spyware_cli = { git = "https://github.com/talbor49/spyware_cli" }
+spyware = { git = "https://github.com/talbor49/spyware" }
+failure = "0.1.7"
+ron = "0.5.1"
